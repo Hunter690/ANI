@@ -25,5 +25,4 @@ Parameters: w (an (nx, 1) dimension vector like x) and b (a real number)
 Outputs y-hat = sigmoid(w_transpose * x + b) where z is w_transpose * x + b
 sigmoid(z) = 1 / (1 + e^(-z))
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-
+![alt text](https://user-images.githubusercontent.com/24757872/34464928-f8baadac-ee5b-11e7-89e0-03e79250097b.png)
