@@ -42,7 +42,7 @@ If y = 0: p(y|x) = 1-y-hat
 Generalizing these two equations: p(y|x) = y-hat^y(1-y-hat)^(1-y)
 Intuitive reasoning behind equation: plug in (when y = 1, p(y|x) = y-hat & when y = 0, p(y|x) = 1-y-hat)
 
-![alt text](
+![alt text](https://user-images.githubusercontent.com/24757872/34469782-47abeebe-eeeb-11e7-9b44-2f6bcc9ee6a3.png)
 
 Taking the log of both sides:
 log(p(y|x)) = log(y-hat^y(1-y-hat)^(1-y))  
@@ -53,5 +53,10 @@ Negative because you want to minimize loss function
 
 Total probability of the all the predictions made on a training set:
 
+![alt text](https://user-images.githubusercontent.com/24757872/34469792-7cef3112-eeeb-11e7-9341-0364cb1ea349.png)
+
+Note: log of the produts = sum of logs (Ex. log(5x10) = log(5) + log(10)
+
+y-hat is in thee range (0,1)
 
 
