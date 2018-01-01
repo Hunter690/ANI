@@ -55,8 +55,8 @@ Total probability of the all the predictions made on a training set:
 
 ![alt text](https://user-images.githubusercontent.com/24757872/34469792-7cef3112-eeeb-11e7-9341-0364cb1ea349.png)
 
-Note: log of the produts = sum of logs (Ex. log(5x10) = log(5) + log(10)
-
+Note: log of the produts = sum of logs (Ex. log(5x10) = log(5) + log(10)  
 y-hat is in the range (0,1)
 
+The Cost function is the Loss function applied to m (error in the calculation of everything)
 
