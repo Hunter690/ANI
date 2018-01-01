@@ -57,6 +57,6 @@ Total probability of the all the predictions made on a training set:
 
 Note: log of the produts = sum of logs (Ex. log(5x10) = log(5) + log(10)
 
-y-hat is in thee range (0,1)
+y-hat is in the range (0,1)
 
 
