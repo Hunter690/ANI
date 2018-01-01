@@ -58,5 +58,10 @@ Total probability of the all the predictions made on a training set:
 Note: log of the produts = sum of logs (Ex. log(5x10) = log(5) + log(10)  
 y-hat is in the range (0,1)
 
-The Cost function is the Loss function applied to m (error in the calculation of everything)
+The Cost function is the average of all the calculated Loss values
+
+#### Gradient Descent
+
+Want to find w & b that minimize Cost function
+
 
