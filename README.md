@@ -182,3 +182,36 @@ db = 1/m * np.sum(dZ)
 ```
 
 #### Broadcasting
+
+When using axis = 0, taking vertical columns of a matrix
+When using axis = 1, taking horizontal rows of a matrix
+
+```python
+np.dot() #matrix multiplication where you take row * column
+matrix * matrix #element-wise multiplication
+```
+Broadcasting works on element-wise multiplication
+Ex.
+
+1. [1 2 3 4] + 100
+   In the computer, it becomes:
+   [1 2 3 4] + [100 100 100 100]
+2. [[1 2 3] [4 5 6]] + [100 200 300]
+   Becomes
+   [[1 2 3] [4 5 6]] + [[100 200 300] [100 200 300]]
+
+##### General Principle
+
+```python
+m x n matrix +, -, *, or / by a:
+   1 x n 
+   m x 1
+#becomes copied in a way so that the 1 x n & m x 1 matrix become m x n matrices
+```
+
+NB Do not use a rank 1 array
+
+```python
+assert(matrix_name.shape == (m, n)
+#produces an errror if the matrix is not m x n
+```
