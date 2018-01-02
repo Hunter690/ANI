@@ -221,13 +221,13 @@ assert(matrix_name.shape == (m, n)
 1. Find the number of training samples, test samples, and how many parameters there are
 Ex. for picture recognition, there is usually about 64x64x3 pixels which means that there are 64x64x3 pixels
 2. Combine all of the pixels to one column vector
-3. Combine the pixel column vector with how many m
+3. Combine the pixel column vector with how many m  
    This produces a single matrix with all the training samples and another one for all the test samples
 4. Normalize all of the pixels by dividing by 255 (255 different options in a single pixel)
 
 ![alt text](https://user-images.githubusercontent.com/24757872/34501605-3f24451c-efd5-11e7-84d3-a5571690ea0a.png)
 
-Where W is a matrix of numbers that minimizes the cost function value  
+Where W is a column vector (with dimensions n by 1 where n is the number of pixels) of numbers that minimizes the cost function value  
 & b is a scalar that also minimizes the cost function value by giving neural network an extra degree of freedom
 
 5. Build a function to take the sigmoid of z
@@ -236,10 +236,10 @@ Where W is a matrix of numbers that minimizes the cost function value
 8. Calculate the cost: 1/m * sum(loss)
 9. Find dJ/dw: 1/m * dot product between X and (A - Y).T
 10. Find dJ/db: 1/m * sum(A - Y)
-11. Keep on iterating until you find the value of w & b that produce the smallest cost function value
-   Use w = w - np.dot(learning_rate, dJ/dw)
+11. Keep on iterating until you find the value of w & b that produce the smallest cost function value  
+   Use w = w - np.dot(learning_rate, dJ/dw)  
    &   b = b - np.dot(learning_rate, dJ/db)
 12. Once you find the optimal w & b value, calculate Yhat aka A again using the optimal w & b
-13. If the value of A > .5, then there is a cat
+13. If the value of A > .5, then there is a cat  
     Else, there is not a cat
     
