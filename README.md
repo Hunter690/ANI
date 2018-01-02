@@ -224,8 +224,11 @@ Ex. for picture recognition, there is usually about 64*64*3 pixels which means t
 3. Combine the pixel column vector with how many m
    This produces a single matrix with all the training samples and another one for all the test samples
 4. Normalize all of the pixels by dividing by 255 (255 different options in a single pixel)
+
+![alt text](https://user-images.githubusercontent.com/24757872/34501605-3f24451c-efd5-11e7-84d3-a5571690ea0a.png)
+
 5. Build a function to take the sigmoid of z
-6. Find yhat aka A by taking the sigmoid(dot product between w.T and X + b)
+6. Find Yhat aka A by taking the sigmoid(dot product between w.T and X + b)
 7. Calculate the loss: ylog(a) + (1-y)log(1-a)
 8. Calculate the cost: 1/m * sum(loss)
 9. Find dJ/dw: 1/m * dot product between X and (A - Y).T
