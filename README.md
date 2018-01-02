@@ -219,13 +219,16 @@ assert(matrix_name.shape == (m, n)
 #### Outline of Steps 
 
 1. Find the number of training samples, test samples, and how many parameters there are
-Ex. for picture recognition, there is usually about 64*64*3 pixels which means that there are 64*64*3 pixels
+Ex. for picture recognition, there is usually about 64x64x3 pixels which means that there are 64x64x3 pixels
 2. Combine all of the pixels to one column vector
 3. Combine the pixel column vector with how many m
    This produces a single matrix with all the training samples and another one for all the test samples
 4. Normalize all of the pixels by dividing by 255 (255 different options in a single pixel)
 
 ![alt text](https://user-images.githubusercontent.com/24757872/34501605-3f24451c-efd5-11e7-84d3-a5571690ea0a.png)
+
+Where W is a matrix of numbers that minimizes the cost function value  
+& b is a scalar that also minimizes the cost function value by giving neural network an extra degree of freedom
 
 5. Build a function to take the sigmoid of z
 6. Find Yhat aka A by taking the sigmoid(dot product between w.T and X + b)
