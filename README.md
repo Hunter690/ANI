@@ -64,4 +64,15 @@ The Cost function is the average of all the calculated Loss values
 
 Want to find w & b that minimize Cost function
 
+![alt text](https://user-images.githubusercontent.com/24757872/34472032-540cd380-ef1d-11e7-8e80-35d48266133b.png)
+
+![alt text](https://user-images.githubusercontent.com/24757872/34472048-b24ae022-ef1d-11e7-9c1b-43c9eecd7d0c.png)
+
+Partial differentiation is used when differentiating more than one variable
+
+####Computational Graph
+
+J(a, b, c) = 3(a + bc) where J is a function with three parameters aka variables  
+Substituting u = bc, v = a + u, and J = 3v  
+
 
