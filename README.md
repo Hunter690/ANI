@@ -215,3 +215,25 @@ NB Do not use a rank 1 array
 assert(matrix_name.shape == (m, n)
 #produces an errror if the matrix is not m x n
 ```
+
+#### Outline of Steps 
+
+1. Find the number of training samples, test samples, and how many parameters there are
+Ex. for picture recognition, there is usually about 64*64*3 pixels which means that there are 64*64*3 pixels
+2. Combine all of the pixels to one column vector
+3. Combine the pixel column vector with how many m
+   This produces a single matrix with all the training samples and another one for all the test samples
+4. Normalize all of the pixels by dividing by 255 (255 different options in a single pixel)
+5. Build a function to take the sigmoid of z
+6. Find yhat aka A by taking the sigmoid(dot product between w.T and X + b)
+7. Calculate the loss: ylog(a) + (1-y)log(1-a)
+8. Calculate the cost: 1/m * sum(loss)
+9. Find dJ/dw: 1/m * dot product between X and (A - Y).T
+10. Find dJ/db: 1/m * sum(A - Y)
+11. Keep on iterating until you find the value of w & b that produce the smallest cost function value
+   Use w = w - np.dot(learning_rate, dJ/dw)
+   &   b = b - np.dot(learning_rate, dJ/db)
+12. Once you find the optimal w & b value, calculate Yhat aka A again using the optimal w & b
+13. If the value of A > .5, then there is a cat
+    Else, there is not a cat
+    
