@@ -95,3 +95,90 @@ z = w.T * x + b where .T refers to the transpose of a matrix
 yhat = a = sig(z)  
 L(a, y) = -(ylog(yhat) + (1 - y)log(1 - yhat)
 
+![alt text](https://user-images.githubusercontent.com/24757872/34474480-e29107bc-ef44-11e7-9f8d-fa642372cf01.png)
+
+da/dz is the derivative of the sigmoid function with respect to z  
+dz/dw is the corresponding x(i) while dz/db is always one (therefore dL/dz = dL/dz)
+
+#### LR on m
+
+```python
+import numpy as np
+
+J =0
+dL/dw1 = 0
+dL/dw2 = 0
+dL/db = 0
+
+for i = 1 in m:
+   z[i] = w.T * x[i] + b
+   a[i] = 1/(1-np.exp(z[i))
+   J += -(y[i] * np.log(a[i]) + (1-y[i]) * np.log(1 - a[i]))
+   dL/dz[i] = a[i] - y[i]
+   dL/dw1 += x1[i] * dL/dz[i]
+   dL/dw2 += x2[i] * dL/dz[i]
+   dL/db += dL/dz[i]
+   
+J = J/m
+```
+
+##### Side Note: Softmax function normalizes a matrix 
+
+#### Vectorization
+
+Vectorization is the omission of loops to increase efficiency of algorithm
+
+##### Vectorization to find z
+z = w.T * x + b
+
+Non-vectorized python code:
+```python
+
+z = 0
+for i in range (n_x):
+   z += w[i] * x[i]
+
+z += b
+```
+
+Vectorized python code:
+```python
+
+z = np.dot(w.T, X) + b
+```
+
+##### Vectorization LR Gradient Regression
+
+Note: a derivative with respect to a variable may commonly be seen as the derivative of the variable  
+Ex: dL/dz is commonly written as dz  
+Due to a lack of clarity, this convention will not be followed  
+dL/dz[1] = a[1] - y[1]  
+dL/dZ = [dL/dz[1] dL/dz[2] ... dL/dz[m]]  
+A = [a[1] ... a[m]]   Y = [y[1] ... y[m]]  
+dL/dZ = A - Y = [a[1] - y[1] ... a[m] - y[m]]  
+
+Non-vectorized dL/db
+
+```python
+
+db = 0  
+
+for i in m:
+   db += dz[1] ...  
+   db += dz[m]
+
+db /= m
+```
+
+Completely Vectorized
+
+```python
+
+A = 1/(1-np.exp(Z))
+dZ = A - Y
+dw = 1/m * np.dot(X, dZ.T)
+db = 1/m * np.sum(dZ)
+
+```
+
+#### Broadcasting
