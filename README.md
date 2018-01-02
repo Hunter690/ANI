@@ -11,7 +11,7 @@ The # of training sets you give a neural network is like how many problems you g
 The # of training sets is denoted: m  
 m training examples: {(x1, y1), (x2, y2)... (xm, ym)} where x is a single instance of a problem (like one math problem) and y is the answer.
 
-X = [x1 x2 xm] where X is an m x nx matrix
+X = [x1 x2 xm] where X is an m by nx matrix
 (the x in nx refers to the descriptions in the problem Ex. math problem says: 5+5, nx would be 3 because 5, +, 5 are used.)
 
 ### Week 2
@@ -51,6 +51,7 @@ log(p(y|x)) = log(yhat^y(1-yhat)^(1-y))
 = L(yhat, y)  
 log(p(y|x)) = -L(yhat, y)
 
+Note: log with base e, really just natural log  
 Negative because you want to minimize loss function
 
 Total probability of the all the predictions made on a training set:
@@ -88,4 +89,9 @@ dJ/du = (dJ/dv)(dv/du) = 3
 dJ/db = (dJ/du)(du/db) = 3 * 2 = 6  
 dJ/dc = (dJ/du)(du/dc) = 3 * 3 = 9  
 
+#### Forward and Backward Propogation
+
+z = w.T * x + b where .T refers to the transpose of a matrix  
+yhat = a = sig(z)  
+L(a, y) = -(ylog(yhat) + (1 - y)log(1 - yhat)
 
