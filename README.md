@@ -5,7 +5,7 @@ Deep Learning coursera.org https://www.coursera.org/specializations/deep-learnin
 
 #### What is a Neural Network?
 
-Given some input, some calculations occur & a final output comes out.
+Given structured data set, a sequence of calculations produces a final output.
 
 The # of training sets you give a neural network is like how many problems you give a kid preparing for a math test.  
 The # of training sets is denoted: m  
