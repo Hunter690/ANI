@@ -221,7 +221,10 @@ assert(matrix_name.shape == (m, n)
 1. Find the number of training samples, test samples, and how many parameters there are
 Ex. for picture recognition, there is usually about 64x64x3 pixels which means that there are 64x64x3 pixels
 2. Combine all of the pixels to one column vector
-3. Combine the pixel column vector with how many m  
+3. Take the transpose of the combined the pixel column vector with the negative of the amount of training samples  
+   Ex. pic_flatten = train_set_x_flatten '
+   = train_set_x_orig.reshape(train_set_x_orig.shape[0], - train_set_x_orig.shape[1]*train_set_x_orig.shape[2]*3).T
+   test_set_x_flatten = test_set_x_orig.reshape(test_set_x_orig.shape[0], -test_set_x_orig.shape[1]*test_set_x_orig.shape[2]*3).T
    This produces a single matrix with all the training samples and another one for all the test samples
 4. Normalize all of the pixels by dividing by 255 (255 different options in a single pixel)
 
