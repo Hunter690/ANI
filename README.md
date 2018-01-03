@@ -246,3 +246,12 @@ Where W is a column vector (with dimensions n by 1 where n is the number of pixe
 13. If the value of A > .5, then there is a cat  
     Else, there is not a cat
     
+### Week 3
+
+![alt text](https://user-images.githubusercontent.com/24757872/34536645-6aa1dc84-f08b-11e7-865c-5bb119b33d53.png)
+
+![alt text](https://user-images.githubusercontent.com/24757872/34536708-a4ec6f12-f08b-11e7-9439-c7b8cca2c493.png)
+
+![alt text](https://user-images.githubusercontent.com/24757872/34536740-c499f42e-f08b-11e7-8de7-d4ff7cd059aa.png)
+
+![alt text](https://user-images.githubusercontent.com/24757872/34537285-99a5996a-f08d-11e7-806e-3c14c6c55fce.png)
