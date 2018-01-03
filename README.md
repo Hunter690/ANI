@@ -261,3 +261,8 @@ ReLU function is more useful in comparison to the sigmoid function because its r
 is greater (especially on the extremes of the sigmoid function)  
 Sigmoid function is still useful in the calculations for the final A because the probability likely results in a number
 between one and zero
+
+![alt text](https://user-images.githubusercontent.com/24757872/34540840-a79de104-f09b-11e7-9971-848fb3e0dec1.png)
+
+Proof for dZ^[1]:  
+
