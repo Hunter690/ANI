@@ -255,3 +255,9 @@ Where W is a column vector (with dimensions n by 1 where n is the number of pixe
 ![alt text](https://user-images.githubusercontent.com/24757872/34536740-c499f42e-f08b-11e7-8de7-d4ff7cd059aa.png)
 
 ![alt text](https://user-images.githubusercontent.com/24757872/34537285-99a5996a-f08d-11e7-806e-3c14c6c55fce.png)
+
+Activiation functions are used because a linear function would make all of the hidden layers useless  
+ReLU function is more useful in comparison to the sigmoid function because its rate of change when z is positive
+is greater (especially on the extremes of the sigmoid function)  
+Sigmoid function is still useful in the calculations for the final A because the probability likely results in a number
+between one and zero
