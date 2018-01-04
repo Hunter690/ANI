@@ -264,5 +264,15 @@ between one and zero
 
 ![alt text](https://user-images.githubusercontent.com/24757872/34540840-a79de104-f09b-11e7-9971-848fb3e0dec1.png)
 
-Proof for dZ^[1]:  
+Note: derivative is written with respect to a variable rather than the normal notation  
+Proof for (dL/dZ)^[1]:  
+
+dL[1]/dZ[1] = (dL/dA[1])(dA[1]/dZ[1])  
+= (dL/dZ[2])(dZ[2]/dA[1])(dA[1]/dZ[1])  
+= (dL/dZ[2])W[2](dA[1]/dZ[1])  
+= W[2]"dZ[2]" dot product g[1]'(Z[1])  
+
+There isn't a 1/m for the dL/dZ terms because 1/m is the averaging constant  
+1/m could be included in the dL/dZ equation, but it would add a step for the computer to calculate  
+Instead, it is just added to dW and dB
 
