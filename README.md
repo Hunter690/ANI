@@ -256,6 +256,10 @@ Where W is a column vector (with dimensions n by 1 where n is the number of pixe
 
 ![alt text](https://user-images.githubusercontent.com/24757872/34537285-99a5996a-f08d-11e7-806e-3c14c6c55fce.png)
 
+![alt text](https://user-images.githubusercontent.com/24757872/34586468-b3d9f600-f169-11e7-95e4-979029170a34.png)
+
+Where ReLU(A) = max(0, Z) and leakyReLU(A) = max(Z * .01, Z)
+
 Activiation functions are used because a linear function would make all of the hidden layers useless  
 ReLU function is more useful in comparison to the sigmoid function because its rate of change when z is positive
 is greater (especially on the extremes of the sigmoid function)  
