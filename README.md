@@ -258,7 +258,8 @@ Where W is a column vector (with dimensions n by 1 where n is the number of pixe
 
 ![alt text](https://user-images.githubusercontent.com/24757872/34586468-b3d9f600-f169-11e7-95e4-979029170a34.png)
 
-Where ReLU(A) = max(0, Z) and leakyReLU(A) = max(Z * .01, Z)
+Where ReLU(A) = max(0, Z) and leakyReLU(A) = max(Z * .01, Z)  
+NB. tanh(x) = (e^x - e^(-x))/(e^x + e^(-x))  
 
 Activiation functions are used because a linear function would make all of the hidden layers useless  
 ReLU function is more useful in comparison to the sigmoid function because its rate of change when z is positive
