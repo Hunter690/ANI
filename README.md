@@ -183,7 +183,7 @@ db = 1/m * np.sum(dZ)
 
 #### Broadcasting
 
-When using axis = 0, taking vertical columns of a matrix
+When using axis = 0, taking vertical columns of a matrix  
 When using axis = 1, taking horizontal rows of a matrix
 
 ```python
