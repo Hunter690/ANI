@@ -276,3 +276,12 @@ There isn't a 1/m for the dL/dZ terms because 1/m is the averaging constant
 1/m could be included in the dL/dZ equation, but it would add a step for the computer to calculate  
 Instead, it is just added to dW and dB
 
+![alt text](https://user-images.githubusercontent.com/24757872/34548471-e91aa668-f0c7-11e7-960e-30a9ad2f5bbe.png)
+
+![alt text](https://user-images.githubusercontent.com/24757872/34549770-dcbe546a-f0d0-11e7-8999-940b6ad9a363.png)
+
+![alt text](https://user-images.githubusercontent.com/24757872/34584177-5aa31516-f160-11e7-8d11-055af7885c56.png)
+
+![alt text](https://user-images.githubusercontent.com/24757872/34584200-78c7d31a-f160-11e7-9c9e-ada7db022ca4.png)
+
+![alt text](https://user-images.githubusercontent.com/24757872/34584241-924b4ede-f160-11e7-820e-8e5a8f59ef25.png)
