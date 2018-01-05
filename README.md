@@ -16,10 +16,10 @@ Deep Learning coursera.org https://www.coursera.org/specializations/deep-learnin
 
 #### Logistic Regression (LR)
 
-Given x (where x can be something like a picture), calculate yhat.  
-Yhat is the probability that something is true given x (like if it is true that there is a cat in a picture)  
-yhat = P(y = 1|x)  
-Parameters: w (an (nx, 1) dimension vector like x) and b (a real number)  
+- Given `x` (where `x` can be something like a picture), calculate `yhat`.  
+- `Yhat` is the probability that something is true given `x` (like if it is true that there is a cat in a picture)  
+- `yhat = P(y = 1|x)`  
+- Parameters: `w` (an (`n_x`, 1) dimension vector like `x`) and `b` (a real number)  
 Outputs yhat = sigmoid(w_transpose * x + b) where z is w_transpose * x + b
 sigmoid(z) = 1 / (1 + e^(-z))
 
@@ -302,3 +302,5 @@ Hyperparameters are parameters that affect W & b:
 5. activation function used
 
 ![alt text](https://user-images.githubusercontent.com/24757872/34623340-996dc3c0-f216-11e7-8e3c-17a2c2135ac1.png)
+
+![alt text](https://user-images.githubusercontent.com/24757872/34624551-5e9d051c-f21b-11e7-9133-48d53c2df29d.png)
