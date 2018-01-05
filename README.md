@@ -4,15 +4,13 @@ Deep Learning coursera.org https://www.coursera.org/specializations/deep-learnin
 ### Week 1
 
 #### What is a Neural Network?
+- Given structured data set, a sequence of calculations produces a final output.
+- The # of training sets you give a neural network is like how many problems you give a kid preparing for a math test.  
+- The # of training sets is denoted: m  
+- `m` training examples: `{(x1, y1), (x2, y2)... (xm, ym)}` where `x` is a single instance of a problem (like one math problem) and `y` is the answer.
 
-Given structured data set, a sequence of calculations produces a final output.
-
-The # of training sets you give a neural network is like how many problems you give a kid preparing for a math test.  
-The # of training sets is denoted: m  
-m training examples: {(x1, y1), (x2, y2)... (xm, ym)} where x is a single instance of a problem (like one math problem) and y is the answer.
-
-X = [x1 x2 xm] where X is an m by nx matrix
-(the x in nx refers to the descriptions in the problem Ex. math problem says: 5+5, nx would be 3 because 5, +, 5 are used.)
+- `X = [x1 x2 xm]` where `X` is an `m` by `n_x` matrix
+(the `x` in `n_x` refers to the descriptions in the problem Ex. math problem says: `5+5`, `n_x` would be `3` because `5, +, 5` are used.)
 
 ### Week 2
 
