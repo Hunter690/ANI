@@ -290,3 +290,15 @@ Instead, it is just added to dW and dB
 ![alt text](https://user-images.githubusercontent.com/24757872/34584200-78c7d31a-f160-11e7-9c9e-ada7db022ca4.png)
 
 ![alt text](https://user-images.githubusercontent.com/24757872/34584241-924b4ede-f160-11e7-820e-8e5a8f59ef25.png)
+
+### Week 4
+
+Continued analysis of week 3 and application into Deep Neural Networks
+
+Parameters include: W (weight) & b (bias)  
+Hyperparameters are parameters that affect W & b:
+1. Learning Rate
+2. # of iterations (how many times W := W - learning_rate(dW)
+3. # of hidden layers
+4. # of hidden units
+5. activation function used
