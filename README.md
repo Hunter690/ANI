@@ -305,3 +305,5 @@ dL[1]/dZ[1] = (dL/dA[1])(dA[1]/dZ[1])
 ![alt text](https://user-images.githubusercontent.com/24757872/34623340-996dc3c0-f216-11e7-8e3c-17a2c2135ac1.png)
 
 ![alt text](https://user-images.githubusercontent.com/24757872/34624551-5e9d051c-f21b-11e7-9133-48d53c2df29d.png)
+
+![alt text](https://user-images.githubusercontent.com/24757872/34635467-714770e6-f255-11e7-9245-4dd44f808ed4.png)
