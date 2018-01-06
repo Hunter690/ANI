@@ -43,12 +43,12 @@ Deep Learning coursera.org https://www.coursera.org/specializations/deep-learnin
 ![alt text](https://user-images.githubusercontent.com/24757872/34469782-47abeebe-eeeb-11e7-9b44-2f6bcc9ee6a3.png)
 
 - Taking the log of both sides:
-`
+```
 - log(p(y|x)) = log(yhat^y(1-yhat)^(1-y))  
               = ylog(yhat) + (1-y)log(1-yhat)  
               = L(yhat, y)  
               = -L(yhat, y)
-`
+```
 - Note: log with base e, really just natural log  
 - Negative because you want to minimize loss function
 
@@ -176,7 +176,6 @@ A = 1/(1-np.exp(Z))
 dZ = A - Y
 dw = 1/m * np.dot(X, dZ.T)
 db = 1/m * np.sum(dZ)
-
 ```
 
 #### Broadcasting
@@ -191,14 +190,14 @@ matrix * matrix #element-wise multiplication
 - Broadcasting works on element-wise multiplication
 
 Ex.
-`
+```
 1. [1 2 3 4] + 100
    In the computer, it becomes:
    [1 2 3 4] + [100 100 100 100]
 2. [[1 2 3] [4 5 6]] + [100 200 300]
    Becomes
    [[1 2 3] [4 5 6]] + [[100 200 300] [100 200 300]]
-`
+```
 
 ##### General Principle
 
