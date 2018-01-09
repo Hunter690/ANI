@@ -307,3 +307,14 @@ dL[1]/dZ[1] = (dL/dA[1])(dA[1]/dZ[1])
 ![alt text](https://user-images.githubusercontent.com/24757872/34624551-5e9d051c-f21b-11e7-9133-48d53c2df29d.png)
 
 ![alt text](https://user-images.githubusercontent.com/24757872/34635467-714770e6-f255-11e7-9245-4dd44f808ed4.png)
+
+#### Building a Deep Neural Network
+
+Steps to build neural network with multiple hidden layers
+
+1. Initialize parameters for an L-layer neural network
+2. Calculate Activation function relative to relu or sigmoid function using Z through forward propogation
+3. Compute loss and coss function
+4. Implement backward propagation
+5. Calculuate dW and dB and implement gradient descent
+6. Use optimized parameters to calculate output
