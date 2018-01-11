@@ -1,6 +1,8 @@
 # ANI
 Deep Learning coursera.org https://www.coursera.org/specializations/deep-learning
 
+## Course 1 Neural Networks and Deep Learning
+
 ### Week 1
 
 #### What is a Neural Network?
@@ -318,3 +320,9 @@ Steps to build neural network with multiple hidden layers
 4. Implement backward propagation
 5. Calculuate dW and dB and implement gradient descent
 6. Use optimized parameters to calculate output
+
+## Course 2 Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization
+
+### Week 1
+
+
