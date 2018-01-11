@@ -325,4 +325,6 @@ Steps to build neural network with multiple hidden layers
 
 ### Week 1
 
+- High bias means underfitting while high variance means overfitting
+- 
 
