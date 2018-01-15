@@ -366,6 +366,8 @@ A3 is divided by keep_prob to keep the z value the same
 
 - Normalizing inputs creates a symmetric cost function, also allowing faster gradient descent
 
+![alt text](https://user-images.githubusercontent.com/24757872/34961643-c47e0bc8-fa05-11e7-9bf5-b4d30732cc57.png)
+
 #### Vanishing/Exploding Gradients
 
 ![alt text](https://user-images.githubusercontent.com/24757872/34961540-45762c20-fa05-11e7-8152-f6e8e70ac8ca.png)
