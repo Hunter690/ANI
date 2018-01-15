@@ -350,7 +350,7 @@ Steps to build neural network with multiple hidden layers
 - Dropout regularization just randomly shuts off nodes in different layers based off of a given probabiltiy
 - Ex. give_prob = .5, then in layers 1 through L, half of the nodes are shut off
 
-Implementation:
+Implementation of Inverted Dropout:
 
 ![alt text](https://user-images.githubusercontent.com/24757872/34959183-efe19e48-f9fa-11e7-8049-18b4b086d004.png)
 
@@ -358,6 +358,7 @@ Implementation:
 A3 is divided by keep_prob to keep the z value the same
 - Dropout does make it harder to determine J
 - Early stopping is another possible solution where the calculation and updating of W gets stopped at some given time which ensures that W is not too small or too large
+- Do not use drop out at test time because you do not want the output to be random, but keep the 1/keep_prob factor
 
 ![alt text](https://user-images.githubusercontent.com/24757872/34959198-04752316-f9fb-11e7-984e-3d9a14c371e6.png)
 
