@@ -358,7 +358,7 @@ Implementation of Inverted Dropout:
 A3 is divided by keep_prob to keep the z value the same
 - Dropout does make it harder to determine J
 - Early stopping is another possible solution where the calculation and updating of W gets stopped at some given time which ensures that W is not too small or too large
-- Do not use drop out at test time because you do not want the output to be random, but keep the 1/keep_prob factor
+- Do not use drop out at test time because you do not want the output to be random, and don't keep the 1/keep_prob factor
 
 #### Normalizing Inputs
 
