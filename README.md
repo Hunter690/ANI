@@ -360,6 +360,8 @@ A3 is divided by keep_prob to keep the z value the same
 - Early stopping is another possible solution where the calculation and updating of W gets stopped at some given time which ensures that W is not too small or too large
 - Do not use drop out at test time because you do not want the output to be random, but keep the 1/keep_prob factor
 
+#### Vanishing/Exploding Gradients
+
 ![alt text](https://user-images.githubusercontent.com/24757872/34959198-04752316-f9fb-11e7-984e-3d9a14c371e6.png)
 
 - Want W to be small (less than 1) or else yhat becomes very large
