@@ -326,5 +326,19 @@ Steps to build neural network with multiple hidden layers
 ### Week 1
 
 - High bias means underfitting while high variance means overfitting
-- 
+
+![alt text](https://user-images.githubusercontent.com/24757872/34807313-ad3368a2-f64d-11e7-9b5c-39a1bcfa7018.png)
+
+- Where lambda is the regularization parameter
+- L2 regulation is used far more frequently
+- L1 regulation just makes w sparse which means that there will be more 0s in the W matrix, taking up less memory
+- b regulation can be omitted because w has such a bigger effect
+
+![alt text](https://user-images.githubusercontent.com/24757872/34807397-3a68151a-f64e-11e7-92d9-a88317db104b.png)
+
+- Dropout regularization just randomly shuts off nodes in different layers based off of a given probabiltiy
+- Ex. give_prob = .5, then in layers 1 through L, half of the nodes are shut off
+
+Implementation:
+
 
