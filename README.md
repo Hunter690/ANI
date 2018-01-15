@@ -368,5 +368,4 @@ A3 is divided by keep_prob to keep the z value the same
 
 ![alt text](https://user-images.githubusercontent.com/24757872/34959742-75215a42-f9fd-11e7-9684-7c0666fd6f85.png)
 
-- Where W[1], b[1]... W[L], b[L] is reshaped to a big vector, theta
-- Where dW[1], db[1]... dW[L], db[L] is reshaped into a big vector, dtheta
+- Where W[1], b[1]... W[L], b[L] is reshaped to a big vector, theta and dW[1], db[1]... dW[L], db[L] is reshaped into a big vector, dtheta
