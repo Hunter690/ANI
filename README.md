@@ -376,7 +376,7 @@ A3 is divided by keep_prob to keep the z value the same
 
 ![alt text](https://user-images.githubusercontent.com/24757872/34959207-110128be-f9fb-11e7-99f9-ed3416520139.png)
 
-- Where Xavier initialization is a variance hyperparameter
+- Where Xavier initialization just helps with vanishing/exploding gradients
 
 ![alt text](https://user-images.githubusercontent.com/24757872/34959742-75215a42-f9fd-11e7-9684-7c0666fd6f85.png)
 
