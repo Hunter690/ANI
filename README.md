@@ -325,7 +325,15 @@ Steps to build neural network with multiple hidden layers
 
 ### Week 1
 
+![alt text](https://user-images.githubusercontent.com/24757872/34960203-8076dc4e-f9ff-11e7-9412-0bb29075691f.png)
+
 - High bias means underfitting while high variance means overfitting
+- If you have high bias:
+1. Use a bigger network
+2. Train for a longer period of time
+- If you have high variance:
+1. Give more training set
+2. Regularization
 - Instead of going from a train set to a test set, there is now a development set (dev set) where programmer can compare two different algorithms
 - Modern big data training set means allocating 98% of examples to train set, 1% to dev set, and 1% to test set
 - Want dev and test set to come from the same distribution (cat photos online vs. cat videos taken on cell phone)
