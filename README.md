@@ -341,4 +341,15 @@ Steps to build neural network with multiple hidden layers
 
 Implementation:
 
+![alt text](https://user-images.githubusercontent.com/24757872/34959183-efe19e48-f9fa-11e7-8049-18b4b086d004.png)
 
+- Dropout is used because it makes nodes on a given layer not dependent on a specific feature, forcing the weights to spread out
+A3 is divided by keep_prob to keep the z value the same
+- Dropout does make it harder to determine J
+- Early stopping is another possible solution where the calculation and updating of W gets stopped at some given time which ensures that W is not too small or too large
+
+![alt text](https://user-images.githubusercontent.com/24757872/34959198-04752316-f9fb-11e7-984e-3d9a14c371e6.png)
+
+- Want W to be small (less than 1) or else yhat becomes very large
+
+![alt text](https://user-images.githubusercontent.com/24757872/34959207-110128be-f9fb-11e7-99f9-ed3416520139.png)
